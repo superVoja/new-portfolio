@@ -195,18 +195,9 @@ body {
   }
 
   .contact-links {
+    margin-left: 33%;
     flex-basis: 33%;
     max-width: 33%;
-    margin-left: 33%;
-
-    ul li {
-      list-style: none;
-    }
-
-    a {
-      text-decoration: none;
-      color: $primary-text;
-    }
   }
 }
 /* ---------- main-footer--------*/
