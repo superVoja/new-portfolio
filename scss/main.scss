@@ -1,4 +1,5 @@
 @import "config";
+
 /* ---------- global ----------*/
 * {
   box-sizing: border-box;
@@ -37,6 +38,7 @@ body {
     flex-basis: 25%;
     display: block;
     max-width: 25%;
+    padding: 1.2rem 0;
 
     a {
       color: $primary-text;
@@ -78,6 +80,21 @@ body {
         transform: scaleX(1);
       }
     }
+  }
+}
+.menu-button {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+
+  .button-line {
+    width: 38px;
+    height: 5px;
+    margin: 0 0 5px 0;
+    background: $primary-text;
+    border-radius: 5px;
   }
 }
 /* ---------- intro ---------*/
@@ -143,6 +160,7 @@ body {
 
   .what-i-do-list {
     padding: 2rem 0;
+    list-style: none;
   }
 }
 /* ---------- main-work ---------*/
@@ -210,3 +228,5 @@ body {
     text-align: right;
   }
 }
+
+@import "mobile";
