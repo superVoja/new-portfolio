@@ -172,6 +172,7 @@ body {
     flex-basis: 50%;
     text-align: right; }
 
+/* ---------- about-page -------*/
 @media screen and (max-width: 768px) {
   .menu-button {
     display: block; }
