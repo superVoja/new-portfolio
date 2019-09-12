@@ -37,6 +37,11 @@ body {
     flex-basis: 25%;
     display: block;
     max-width: 25%;
+
+    a {
+      color: $primary-text;
+      text-decoration: none;
+    }
   }
 
   .nav {
@@ -51,13 +56,27 @@ body {
 
     .nav-item {
       list-style: none;
+      padding: 0 1.2rem;
     }
 
     .nav-link {
       display: block;
-      padding: 0 1.2rem;
+
       text-decoration: none;
       color: $primary-text;
+      text-transform: lowercase;
+
+      &::after {
+        display: block;
+        content: "";
+        border-bottom: solid 1px $primary-text;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
     }
   }
 }
@@ -121,6 +140,10 @@ body {
 .what-i-do {
   padding: 2rem 0;
   margin-left: 15rem;
+
+  .what-i-do-list {
+    padding: 2rem 0;
+  }
 }
 /* ---------- main-work ---------*/
 .work-container {
@@ -157,6 +180,15 @@ body {
     flex-basis: 33%;
     max-width: 33%;
     margin-left: 33%;
+
+    ul li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: $primary-text;
+    }
   }
 }
 /* ---------- main-footer--------*/

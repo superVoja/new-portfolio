@@ -35,6 +35,9 @@ body {
     flex-basis: 25%;
     display: block;
     max-width: 25%; }
+    .nav-container .branding a {
+      color: #000;
+      text-decoration: none; }
   .nav-container .nav {
     flex-basis: 75%;
     max-width: 75%; }
@@ -43,12 +46,21 @@ body {
     justify-content: flex-end;
     text-align: right; }
     .nav-container .main-nav .nav-item {
-      list-style: none; }
+      list-style: none;
+      padding: 0 1.2rem; }
     .nav-container .main-nav .nav-link {
       display: block;
-      padding: 0 1.2rem;
       text-decoration: none;
-      color: #000; }
+      color: #000;
+      text-transform: lowercase; }
+      .nav-container .main-nav .nav-link::after {
+        display: block;
+        content: "";
+        border-bottom: solid 1px #000;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out; }
+      .nav-container .main-nav .nav-link:hover::after {
+        transform: scaleX(1); }
 
 /* ---------- intro ---------*/
 .intro-container {
@@ -96,6 +108,8 @@ body {
 .what-i-do {
   padding: 2rem 0;
   margin-left: 15rem; }
+  .what-i-do .what-i-do-list {
+    padding: 2rem 0; }
 
 /* ---------- main-work ---------*/
 .work-container {
@@ -126,6 +140,11 @@ body {
     flex-basis: 33%;
     max-width: 33%;
     margin-left: 33%; }
+    .contact-container .contact-links ul li {
+      list-style: none; }
+    .contact-container .contact-links a {
+      text-decoration: none;
+      color: #000; }
 
 /* ---------- main-footer--------*/
 .main-footer {
