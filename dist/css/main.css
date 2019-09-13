@@ -234,4 +234,18 @@ body {
       padding: 2rem 0; }
     .contact-container .contact-links {
       margin: 0;
-      padding: 2rem 0; } }
+      padding: 2rem 0; }
+  .about-page-container {
+    display: flex;
+    flex-direction: column; }
+    .about-page-container .about-me-content {
+      max-width: 100%; }
+    .about-page-container .about-what-i-do {
+      margin: 0;
+      padding: 2rem; }
+    .about-page-container .stack-list {
+      text-align: center;
+      padding: 4rem 0; }
+    .about-page-container .other-list {
+      text-align: center;
+      padding: 4rem 0; } }

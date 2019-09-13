@@ -67,6 +67,29 @@
       padding: 2rem 0;
     }
   }
+  //about-page
+  .about-page-container {
+    display: flex;
+    flex-direction: column;
+
+    .about-me-content {
+      max-width: 100%;
+    }
+
+    .about-what-i-do {
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .stack-list {
+      text-align: center;
+      padding: 4rem 0;
+    }
+    .other-list {
+      text-align: center;
+      padding: 4rem 0;
+    }
+  }
 }
 
 //Smartphones
