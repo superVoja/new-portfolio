@@ -250,5 +250,33 @@ body {
     padding: 4rem 2rem;
   }
 }
+/* ---------- work-page -------*/
+.work-section-container {
+  padding-top: 4rem;
+
+  .work-section-intro {
+    padding: 4rem 2rem;
+  }
+
+  .project {
+    display: flex;
+    padding: 2rem;
+
+    .project-info {
+      margin-left: 2rem;
+    }
+    a {
+      color: $primary-text;
+      text-decoration: none;
+      margin-left: 0.6rem;
+    }
+  }
+
+  .client-list {
+    display: flex;
+    padding-top: 4rem;
+    justify-content: space-between;
+  }
+}
 
 @import "mobile";
