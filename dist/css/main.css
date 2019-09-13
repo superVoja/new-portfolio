@@ -144,7 +144,7 @@ body {
 
 /* ---------- main-contact --------*/
 .main-contact {
-  padding: 6rem 0; }
+  padding: 6rem 2rem; }
 
 .contact-container {
   display: flex;
@@ -191,10 +191,10 @@ body {
     margin-left: 6rem; }
   .about-page-container .stack-list {
     grid-column: 1/3;
-    padding: 4rem 0; }
+    padding: 4rem 2rem; }
   .about-page-container .other-list {
     grid-column: 1/3;
-    padding: 4rem 0; }
+    padding: 4rem 2rem; }
 
 @media screen and (max-width: 768px) {
   .menu-button {
