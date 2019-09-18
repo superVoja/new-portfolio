@@ -60,11 +60,15 @@
 
     .contact-info {
       padding: 2rem 0;
+      flex-basis: 100%;
+      max-width: 100%;
     }
 
     .contact-links {
       margin: 0;
       padding: 2rem 0;
+      flex-basis: 100%;
+      max-width: 100%;
     }
   }
   //about-page
@@ -88,6 +92,10 @@
     .other-list {
       text-align: center;
       padding: 4rem 0;
+    }
+
+    .stack-list-container {
+      flex-direction: column;
     }
   }
 

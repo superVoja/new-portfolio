@@ -1,7 +1,7 @@
 $primary-color: #000;
 $secondary-color: #fff;
 $primary-text: #000;
-$secondary-text: #fff;
+$secondary-text: #fed330;
 $main-font: "Montserrat", sans-serif;
 
 //Media Query Mixins
@@ -23,5 +23,27 @@ $main-font: "Montserrat", sans-serif;
 @mixin mediaXl {
   @media screen and (min-width: 1171px) {
     @content;
+  }
+}
+
+//Animations
+@mixin fadeInBottom {
+  animation-name: fadeInBottom;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
