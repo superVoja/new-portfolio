@@ -17,7 +17,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  line-height: 1.7; }
+  line-height: 1.7;
+  scroll-behavior: smooth; }
 
 .container {
   max-width: 1020px;
@@ -207,16 +208,56 @@ body {
   animation-timing-function: ease;
   animation-fill-mode: both;
   backface-visibility: hidden;
-  animation-delay: 0.4s; }
+  animation-delay: 0.4s;
+  justify-content: space-between; }
   .work-container .work-link {
     color: #000;
     text-decoration: none;
-    flex-basis: 33%; }
+    flex-basis: 49%;
+    display: block;
+    position: relative;
+    top: 0;
+    height: 250px;
+    margin-top: 40px;
+    background: center / cover;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+    overflow: hidden;
+    background-color: #fff; }
+    .work-container .work-link:hover .work-info {
+      transform: translateY(0);
+      transition: all 0.6s ease-in-out; }
   .work-container .work-info {
-    border: 1px solid black;
-    padding: 2rem;
-    height: 15rem;
-    text-align: center; }
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 10px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 2;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    transform: translateY(150px); }
+    .work-container .work-info h1 {
+      font-size: 1.2rem; }
+  .work-container .item-1 {
+    background: url(../assets/images/stock-trader.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .work-container .item-2 {
+    background: url(../assets/images/sarga-yoga.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .work-container .item-3 {
+    background: url(../assets/images/hoemade.food.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
 
 /* ---------- main-contact --------*/
 .main-contact {

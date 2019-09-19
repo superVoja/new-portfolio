@@ -12,6 +12,7 @@ body {
   padding: 0;
   font-family: $main-font;
   line-height: 1.7;
+  scroll-behavior: smooth;
 }
 .container {
   max-width: 1020px;
@@ -218,17 +219,66 @@ body {
   flex-flow: row wrap;
   @include fadeInBottom;
   animation-delay: 0.4s;
+  justify-content: space-between;
 
   .work-link {
     color: $primary-text;
     text-decoration: none;
-    flex-basis: 33%;
+    flex-basis: 49%;
+    display: block;
+    position: relative;
+    top: 0;
+    height: 250px;
+    margin-top: 40px;
+    background: center / cover;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+    overflow: hidden;
+    background-color: #fff;
+
+    &:hover .work-info {
+      transform: translateY(0);
+      transition: all 0.6s ease-in-out;
+    }
   }
   .work-info {
-    border: 1px solid black;
-    padding: 2rem;
-    height: 15rem;
-    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 10px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 2;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+
+    transform: translateY(150px);
+
+    h1 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .item-1 {
+    background: url(../assets/images/stock-trader.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .item-2 {
+    background: url(../assets/images/sarga-yoga.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .item-3 {
+    background: url(../assets/images/hoemade.food.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 /* ---------- main-contact --------*/
