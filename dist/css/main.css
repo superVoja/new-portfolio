@@ -6,6 +6,12 @@
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes colorAnimation {
+  from {
+    filter: grayscale(100%); }
+  to {
+    filter: grayscale(0); } }
+
 .menu-button {
   cursor: pointer;
   display: none;
@@ -204,9 +210,10 @@ body {
     width: 80%;
     object-fit: cover;
     transition: all 0.4s ease-in-out;
-    filter: grayscale(100%); }
-    .intro-images img:hover {
-      filter: grayscale(0); }
+    animation-name: colorAnimation;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both; }
 
 .intro-link {
   text-decoration: none;

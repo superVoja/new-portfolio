@@ -48,6 +48,22 @@ $main-font: "Montserrat", sans-serif;
   }
 }
 
+@mixin colorAnimation {
+  animation-name: colorAnimation;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes colorAnimation {
+  from {
+    filter: grayscale(100%);
+  }
+  to {
+    filter: grayscale(0);
+  }
+}
+
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }

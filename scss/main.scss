@@ -117,11 +117,12 @@ body {
     width: 80%;
     object-fit: cover;
     transition: all 0.4s ease-in-out;
-    filter: grayscale(100%);
 
-    &:hover {
-      filter: grayscale(0);
-    }
+    @include colorAnimation;
+
+    // &:hover {
+    //   filter: grayscale(0);
+    // }
   }
 }
 .intro-link {
