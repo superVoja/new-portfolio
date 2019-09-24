@@ -47,3 +47,7 @@ $main-font: "Montserrat", sans-serif;
     transform: translateY(0);
   }
 }
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}

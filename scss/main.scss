@@ -1,4 +1,5 @@
 @import "config";
+@import "menu";
 
 /* ---------- global ----------*/
 * {
@@ -82,21 +83,6 @@ body {
         transform: scaleX(1);
       }
     }
-  }
-}
-.menu-button {
-  cursor: pointer;
-  display: none;
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-
-  .button-line {
-    width: 38px;
-    height: 5px;
-    margin: 0 0 5px 0;
-    background: $primary-text;
-    border-radius: 5px;
   }
 }
 /* ---------- intro ---------*/
