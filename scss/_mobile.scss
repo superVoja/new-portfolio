@@ -35,7 +35,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
-    padding-top: 6rem;
+
     padding-left: 2rem;
     padding-right: 2rem;
 
@@ -46,9 +46,8 @@
     margin: 0;
   }
 
-  .work-container {
-    display: flex;
-    flex-direction: column;
+  .main-work {
+    display: none;
   }
 
   .contact-container {
@@ -93,10 +92,6 @@
       text-align: center;
       padding: 4rem 0;
     }
-
-    .stack-list-container {
-      flex-direction: column;
-    }
   }
 
   //work-page
@@ -104,10 +99,16 @@
     text-align: center;
 
     .project {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      flex-flow: column wrap;
       text-align: center;
+      margin-top: 2rem;
+
+      .project-thumbnail {
+        max-width: 100%;
+      }
+      .project-info {
+        margin: 0;
+      }
     }
 
     .client-list {
