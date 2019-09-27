@@ -504,9 +504,18 @@ body {
       width: 100%;
       border-radius: 0.8rem; }
   .work-section-container .client-list {
-    display: flex;
     padding-top: 4rem;
-    justify-content: space-between; }
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
+    .work-section-container .client-list img {
+      object-fit: cover;
+      width: 100%;
+      filter: contrast(0);
+      transition: all 0.4s ease-in-out; }
+      .work-section-container .client-list img:hover {
+        filter: contrast(100%);
+        transform: translateY(-5px); }
 
 @media screen and (max-width: 768px) {
   .menu-button {
