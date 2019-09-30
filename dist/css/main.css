@@ -134,14 +134,15 @@ body {
   height: 70px; }
 
 .nav-scrolled {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  background: #fff;
+  background: #fcfcfc;
   z-index: 999;
-  transition: all 0.5s ease-in-out;
   animation-name: slideInTop;
   animation-duration: 1.2s;
-  animation-fill-mode: both; }
+  animation-fill-mode: both;
+  transition: all 0.5s ease-in-out; }
 
 @keyframes slideInTop {
   from {
@@ -484,53 +485,53 @@ body {
         filter: grayscale(0); }
 
 /* ---------- work-page -------*/
-.work-section-container {
-  padding-top: 4rem; }
-  .work-section-container .work-section-intro {
-    padding: 4rem 2rem;
-    animation-name: fadeInBottom;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-    animation-delay: 0.2s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
-    backface-visibility: hidden; }
-  .work-section-container .project {
-    display: flex;
-    padding: 2rem;
-    animation-name: fadeInBottom;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-    animation-delay: 0.2s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
-    backface-visibility: hidden;
-    animation-delay: 0.4s; }
-    .work-section-container .project .project-info {
-      margin-left: 2rem; }
-    .work-section-container .project a {
-      color: #000;
-      text-decoration: none;
-      margin-left: 0.6rem; }
-    .work-section-container .project .project-thumbnail {
-      max-width: 43%; }
-    .work-section-container .project img {
-      object-fit: cover;
-      width: 100%;
-      border-radius: 0.8rem; }
-  .work-section-container .client-list {
-    padding-top: 4rem;
-    display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
-    .work-section-container .client-list img {
-      object-fit: cover;
-      width: 100%;
-      filter: grayscale(100%);
-      transition: all 0.4s ease-in-out; }
-      .work-section-container .client-list img:hover {
-        filter: grayscale(0);
-        transform: translateY(-5px); }
+.work-section .work-section-intro {
+  padding-top: 4rem;
+  animation-name: fadeInBottom;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden; }
+
+.work-section .project {
+  display: flex;
+  padding: 2rem;
+  animation-name: fadeInBottom;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+  animation-delay: 0.4s; }
+  .work-section .project .project-info {
+    margin-left: 2rem; }
+  .work-section .project a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 0.6rem; }
+  .work-section .project .project-thumbnail {
+    max-width: 43%; }
+  .work-section .project img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 0.8rem; }
+
+.work-section .client-list {
+  padding-top: 4rem;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
+  .work-section .client-list img {
+    object-fit: cover;
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all 0.4s ease-in-out; }
+    .work-section .client-list img:hover {
+      filter: grayscale(0);
+      transform: translateY(-5px); }
 
 @media screen and (max-width: 768px) {
   .menu-button {

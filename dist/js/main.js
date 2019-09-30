@@ -26,7 +26,7 @@ function toggleMenu() {
 
 //Sticky Header
 const header = document.querySelector("header");
-const sectionOne = document.querySelector(".section-one");
+const sectionOne = document.querySelector(".intro");
 
 const sectionOneOptions = {
   rootMargin: "-200px 0px 0px 0px"
@@ -37,6 +37,7 @@ const sectionOneObserver = new IntersectionObserver(function(
   sectionOneObserver
 ) {
   entries.forEach(entry => {
+    console.log(sectionOne);
     if (!entry.isIntersecting) {
       header.classList.add("nav-scrolled");
     } else {
