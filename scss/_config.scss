@@ -67,3 +67,18 @@ $main-font: "Montserrat", sans-serif;
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
+
+@mixin slideInTop {
+  animation-name: slideInTop;
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+}
