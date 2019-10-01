@@ -43,6 +43,7 @@
   z-index: 90;
   background: $secondary-color;
   visibility: hidden;
+  overflow: hidden;
   @include easeOut;
 
   &.show {

@@ -1,0 +1,54 @@
+@import "config";
+@import "menu";
+/* ---------- work-page -------*/
+
+.work-section {
+  .work-section-intro {
+    padding-top: 4rem;
+    @include fadeInBottom;
+  }
+  .project {
+    display: flex;
+    padding: 2rem;
+    @include fadeInBottom;
+    animation-delay: 0.4s;
+
+    .project-info {
+      margin-left: 2rem;
+    }
+    a {
+      color: $primary-text;
+      text-decoration: none;
+      margin-left: 0.6rem;
+    }
+
+    .project-thumbnail {
+      max-width: 43%;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      border-radius: 0.8rem;
+    }
+  }
+
+  .client-list {
+    padding-top: 4rem;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      filter: grayscale(100%);
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        filter: grayscale(0);
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
