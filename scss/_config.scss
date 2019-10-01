@@ -58,9 +58,13 @@ $main-font: "Montserrat", sans-serif;
 @keyframes colorAnimation {
   from {
     filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
   }
   to {
     filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
   }
 }
 

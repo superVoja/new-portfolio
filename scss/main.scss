@@ -29,6 +29,7 @@ body {
 .header {
   width: 100%;
   height: 70px;
+  transition: all 0.5s ease-in-out;
 }
 .nav-scrolled {
   position: -webkit-sticky;
