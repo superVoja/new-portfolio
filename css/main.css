@@ -1031,7 +1031,14 @@ textarea:-ms-input-placeholder {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  padding: 72px 55px 90px 55px; }
+  padding: 72px 55px 90px 55px;
+  animation-name: fadeInBottom;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden; }
   .contact-form-container .contact-form {
     width: 100%; }
   .contact-form-container .contact-form-heading {
