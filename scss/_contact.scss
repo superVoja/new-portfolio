@@ -1,5 +1,5 @@
-@import "config";
-@import "menu";
+@import "./config";
+@import "./menu";
 
 /* ---------- contact page ----------*/
 input {
@@ -88,6 +88,7 @@ textarea:-ms-input-placeholder {
   border-radius: 10px;
   overflow: hidden;
   padding: 72px 55px 90px 55px;
+  @include fadeInBottom;
 
   .contact-form {
     width: 100%;
