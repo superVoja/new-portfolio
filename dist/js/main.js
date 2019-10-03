@@ -25,7 +25,7 @@ function toggleMenu() {
 }
 
 //Sticky Header
-const header = document.querySelector("header");
+/* const header = document.querySelector("header");
 const sectionOne = document.querySelector(".intro");
 
 const sectionOneOptions = {
@@ -47,7 +47,7 @@ const sectionOneObserver = new IntersectionObserver(function(
 },
 sectionOneOptions);
 
-sectionOneObserver.observe(sectionOne);
+sectionOneObserver.observe(sectionOne); */
 
 //Form
 function formFocus() {
