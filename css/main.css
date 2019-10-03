@@ -992,7 +992,14 @@ iframe {
   padding: 72px 55px 90px 55px; }
 
 .contact-form {
-  width: 100%; }
+  width: 100%;
+  animation-name: fadeInBottom;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden; }
   .contact-form .form-heading {
     font-size: 2rem;
     color: #333333;
@@ -1008,7 +1015,8 @@ iframe {
     display: block;
     width: 100%;
     color: #000;
-    line-height: 1.2; }
+    line-height: 1.2;
+    font-family: "Montserrat", sans-serif; }
   .contact-form .focus-input {
     display: block;
     width: 100%;
@@ -1038,7 +1046,8 @@ iframe {
       line-height: 1.2;
       transition: all 0.4s; }
   .contact-form .input {
-    height: 45px; }
+    height: 45px;
+    background: transparent; }
     .contact-form .input + .focus-input::after {
       top: 16px;
       left: 0; }
@@ -1054,6 +1063,27 @@ iframe {
     min-height: 115px;
     padding-top: 13px;
     padding-bottom: 13px; }
+
+.contact-form-wrap-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 13px; }
+  .contact-form-wrap-btn .contact-form-btn {
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 2px;
+    width: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #fbb034;
+    background-image: linear-gradient(45deg, #fbb034 0%, #ffdd00 74%);
+    padding: 0.8rem 1.2rem;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif; }
 
 @media screen and (max-width: 768px) {
   .menu-button {
