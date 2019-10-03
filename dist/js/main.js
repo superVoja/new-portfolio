@@ -50,3 +50,18 @@ sectionOneOptions);
 sectionOneObserver.observe(sectionOne);
 
 //Form
+function formFocus() {
+  const input = document.querySelectorAll(".input");
+
+  input.forEach(input => {
+    input.addEventListener("blur", () => {
+      if (input && input.value != 0) {
+        input.classList.add("has-val");
+      } else {
+        input.classList.remove("has-val");
+      }
+    });
+  });
+}
+
+formFocus();

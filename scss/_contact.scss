@@ -2,3 +2,132 @@
 @import "./menu";
 
 /* ---------- contact page ----------*/
+input {
+  outline: none;
+  border: none;
+
+  &:focus {
+    border-color: transparent !important;
+  }
+}
+
+textarea {
+  outline: none;
+  border: none;
+
+  &:focus {
+    border-color: transparent !important;
+  }
+}
+
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+iframe {
+  border: none !important;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.form-wrap {
+  width: 790px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 72px 55px 90px 55px;
+}
+.contact-form {
+  width: 100%;
+
+  .form-heading {
+    font-size: 2rem;
+    color: #333333;
+    line-height: 1.2;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  .input-wrap {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 4rem;
+  }
+  .input {
+    display: block;
+    width: 100%;
+    color: $primary-text;
+    line-height: 1.2;
+  }
+  .focus-input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 2px;
+      transition: all 0.4s;
+      background: #fbb034;
+      background: linear-gradient(45deg, #fbb034 0%, #ffdd00 74%);
+    }
+    &::after {
+      content: attr(data-placeholder);
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 13px;
+      color: #999999;
+      line-height: 1.2;
+
+      transition: all 0.4s;
+    }
+  }
+  .input {
+    height: 45px;
+
+    & + .focus-input::after {
+      top: 16px;
+      left: 0;
+    }
+
+    &.input:focus + .focus-input::after {
+      top: -13px;
+    }
+    &.input:focus + .focus-input::before {
+      width: 100%;
+    }
+    &.has-val.input + .focus-input::after {
+      top: -13px;
+    }
+    &.has-val.input + .focus-input::before {
+      width: 100%;
+    }
+  }
+
+  textarea.input {
+    min-height: 115px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
