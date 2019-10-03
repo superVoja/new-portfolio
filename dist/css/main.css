@@ -1015,7 +1015,8 @@ iframe {
     display: block;
     width: 100%;
     color: #000;
-    line-height: 1.2; }
+    line-height: 1.2;
+    font-family: "Montserrat", sans-serif; }
   .contact-form .focus-input {
     display: block;
     width: 100%;
