@@ -64,7 +64,13 @@
       <div class="container">
         <div class="form-container">
           <div class="form-wrap">
-            <form action="" class="contact-form validate-form">
+            <form
+              action="https://formspree.io/meyjbdgm"
+              method="POST"
+              class="contact-form validate-form"
+              id="input-form"
+              onsubmit="formValidate()"
+            >
               <div class="form-heading"><h1>Get in touch</h1></div>
               <div
                 class="input-wrap validate-input"
@@ -74,6 +80,7 @@
                   type="text"
                   name="name"
                   class="input"
+                  id="input-name"
                   onblur="formFocus()"
                 />
                 <span class="focus-input" data-placeholder="NAME"></span>
@@ -86,6 +93,7 @@
                   type="text"
                   name="email"
                   class="input"
+                  id="input-email"
                   onblur="formFocus()"
                 />
                 <span class="focus-input" data-placeholder="EMAIL"></span>
@@ -98,12 +106,13 @@
                   type="text"
                   name="message"
                   class="input"
+                  id="input-message"
                   onblur="formFocus()"
                 ></textarea>
                 <span class="focus-input" data-placeholder="MESSAGE"></span>
               </div>
               <div class="contact-form-wrap-btn">
-                <button class="contact-form-btn">
+                <button class="contact-form-btn" type="submit">
                   Send Your Message
                 </button>
               </div>

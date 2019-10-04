@@ -957,15 +957,19 @@ body {
 /* ---------- contact page ----------*/
 input {
   outline: none;
-  border: none; }
+  border: none;
+  background: transparent; }
   input:focus {
-    border-color: transparent !important; }
+    border-color: transparent !important;
+    background: transparent; }
 
 textarea {
   outline: none;
-  border: none; }
+  border: none;
+  background: transparent; }
   textarea:focus {
-    border-color: transparent !important; }
+    border-color: transparent !important;
+    background: transparent; }
 
 button {
   outline: none !important;
@@ -1084,6 +1088,43 @@ iframe {
     color: #000;
     font-weight: bolder;
     font-family: "Montserrat", sans-serif; }
+
+.validate-input {
+  position: relative; }
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 80%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  pointer-events: none;
+  color: #c80000;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transition: opaciry 0.4s; }
+
+.alert-validate::after {
+  content: "!";
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px; }
+
+.alert-validate:hover::before {
+  visibility: visible;
+  opacity: 1; }
 
 @media screen and (max-width: 768px) {
   .menu-button {
