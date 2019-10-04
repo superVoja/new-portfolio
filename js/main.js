@@ -65,3 +65,51 @@ function formFocus() {
 }
 
 formFocus();
+
+function formValidate() {
+  var name = document.querySelector('.validate-input input[name="name"]');
+  var email = document.querySelector('.validate-input input[name="email"]');
+  var message = document.querySelector(
+    '.validate-input textarea[name="message"]'
+  );
+
+  document.getElementById("input-form").addEventListener("submit", () => {
+    var check = true;
+
+    if (name.value == "") {
+      showValidate(name);
+      check = false;
+    }
+    if (email.value == "") {
+      showValidate(email);
+      check = false;
+    }
+    if (message.value == "") {
+      showValidate(message);
+      check = false;
+    }
+
+    return check;
+  });
+
+  const input = document.querySelectorAll(".validate-form .input");
+  input.forEach(input => {
+    input.addEventListener("blur", () => {
+      hideValidate(input);
+    });
+  });
+
+  function showValidate(input) {
+    var thisAlert = input.parentElement;
+
+    thisAlert.classList.add("alert-validate");
+  }
+
+  function hideValidate(input) {
+    var thisAlert = input.parentElement;
+
+    thisAlert.classList.remove("alert-validate");
+  }
+}
+
+formValidate();
