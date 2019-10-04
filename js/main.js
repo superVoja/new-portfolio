@@ -67,6 +67,7 @@ function formFocus() {
 formFocus();
 
 function formValidate() {
+  "use strict";
   var name = document.querySelector('.validate-input input[name="name"]');
   var email = document.querySelector('.validate-input input[name="email"]');
   var message = document.querySelector(
@@ -89,6 +90,10 @@ function formValidate() {
       check = false;
     }
 
+    if (check == false) {
+      event.preventDefault();
+    }
+    console.log(check);
     return check;
   });
 
