@@ -5,6 +5,7 @@
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   background: $secondary-color;
@@ -361,7 +362,6 @@ body {
     text-align: right;
   }
 }
-
 @import "./work";
 @import "./about";
 @import "./contact";

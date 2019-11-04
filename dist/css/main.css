@@ -1131,6 +1131,10 @@ iframe {
   visibility: visible;
   opacity: 1; }
 
+html {
+  visibility: visible;
+  opacity: 1; }
+
 @media screen and (max-width: 768px) {
   .menu-button {
     display: block; }
