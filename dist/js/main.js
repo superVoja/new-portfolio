@@ -69,7 +69,7 @@ formFocus();
 function formValidate() {
   "use strict";
   var name = document.querySelector('.validate-input input[name="name"]');
-  var email = document.querySelector('.validate-input input[name="email"]');
+  var email = document.getElementById("input-email");
   var message = document.querySelector(
     '.validate-input textarea[name="message"]'
   );
@@ -85,15 +85,19 @@ function formValidate() {
       showValidate(email);
       check = false;
     }
+    var testData = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!testData.test(email.value)) {
+      showValidate(email);
+      check = false;
+    }
     if (message.value == "") {
       showValidate(message);
       check = false;
     }
-
     if (check == false) {
       event.preventDefault();
     }
-    console.log(check);
+
     return check;
   });
 
