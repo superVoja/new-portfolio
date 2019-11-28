@@ -24,7 +24,9 @@ body {
   padding-right: 15px;
   padding-left: 15px;
 }
-
+p {
+  text-align: justify;
+}
 /* ---------- header ----------*/
 
 .header {
@@ -190,6 +192,7 @@ body {
   .about-me-text {
     color: $primary-text;
     padding: 2rem 0;
+    text-align: justify;
   }
 
   .about-me-link {

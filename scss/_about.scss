@@ -1,6 +1,9 @@
 @import "config";
 @import "menu";
 /* ---------- about-page -------*/
+p {
+  text-align: justify;
+}
 
 .about-page-container {
   display: grid;
