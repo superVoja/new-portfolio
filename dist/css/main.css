@@ -814,6 +814,8 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center; }
+    .about-intro-container .about-me-text {
+      text-align: center; }
   .what-i-do {
     margin: 0; }
   .main-work {
@@ -824,6 +826,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center; }
+    .contact-container p {
+      text-align: center; }
     .contact-container .contact-info {
       padding: 2rem 0;
       flex-basis: 100%;
@@ -837,7 +841,10 @@ body {
     display: flex;
     flex-direction: column; }
     .about-page-container .about-me-content {
-      max-width: 100%; }
+      max-width: 100%;
+      text-align: center; }
+      .about-page-container .about-me-content p {
+        text-align: center; }
     .about-page-container .about-what-i-do {
       margin: 0;
       padding: 2rem; }
@@ -1178,6 +1185,8 @@ html {
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center; }
+    .about-intro-container .about-me-text {
+      text-align: center; }
   .what-i-do {
     margin: 0; }
   .main-work {
@@ -1188,6 +1197,8 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center; }
+    .contact-container p {
+      text-align: center; }
     .contact-container .contact-info {
       padding: 2rem 0;
       flex-basis: 100%;
@@ -1201,7 +1212,10 @@ html {
     display: flex;
     flex-direction: column; }
     .about-page-container .about-me-content {
-      max-width: 100%; }
+      max-width: 100%;
+      text-align: center; }
+      .about-page-container .about-me-content p {
+        text-align: center; }
     .about-page-container .about-what-i-do {
       margin: 0;
       padding: 2rem; }

@@ -40,6 +40,10 @@
     padding-right: 2rem;
 
     text-align: center;
+
+    .about-me-text {
+      text-align: center;
+    }
   }
 
   .what-i-do {
@@ -56,6 +60,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    p {
+      text-align: center;
+    }
 
     .contact-info {
       padding: 2rem 0;
@@ -77,6 +84,11 @@
 
     .about-me-content {
       max-width: 100%;
+      text-align: center;
+
+      p {
+        text-align: center;
+      }
     }
 
     .about-what-i-do {
