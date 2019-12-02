@@ -7,11 +7,16 @@
     padding-top: 4rem;
     @include fadeInBottom;
   }
+
   .project {
     display: flex;
     padding: 2rem;
     @include fadeInBottom;
-    animation-delay: 0.4s;
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * 300ms;
+      }
+    }
 
     .project-info {
       margin-left: 2rem;

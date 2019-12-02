@@ -572,8 +572,15 @@ body {
   animation-delay: 0.2s;
   animation-timing-function: ease;
   animation-fill-mode: both;
-  backface-visibility: hidden;
-  animation-delay: 0.4s; }
+  backface-visibility: hidden; }
+  .work-section .project:nth-child(1) {
+    animation-delay: 300ms; }
+  .work-section .project:nth-child(2) {
+    animation-delay: 600ms; }
+  .work-section .project:nth-child(3) {
+    animation-delay: 900ms; }
+  .work-section .project:nth-child(4) {
+    animation-delay: 1200ms; }
   .work-section .project .project-info {
     margin-left: 2rem; }
   .work-section .project a {
