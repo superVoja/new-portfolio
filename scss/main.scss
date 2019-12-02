@@ -24,9 +24,7 @@ body {
   padding-right: 15px;
   padding-left: 15px;
 }
-p {
-  text-align: justify;
-}
+
 /* ---------- header ----------*/
 
 .header {
@@ -193,6 +191,10 @@ p {
     color: $primary-text;
     padding: 2rem 0;
     text-align: justify;
+
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
   }
 
   .about-me-link {
@@ -298,6 +300,13 @@ p {
 .contact-container {
   display: flex;
   flex-wrap: wrap;
+
+  p {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
 
   .contact-info {
     flex-basis: 33%;

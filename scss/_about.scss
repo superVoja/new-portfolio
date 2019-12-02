@@ -1,9 +1,6 @@
 @import "config";
 @import "menu";
 /* ---------- about-page -------*/
-p {
-  text-align: justify;
-}
 
 .about-page-container {
   display: grid;
@@ -17,6 +14,13 @@ p {
     padding: 0 2rem;
     max-width: 28rem;
     @include fadeInBottom;
+
+    p {
+      text-align: justify;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+    }
   }
 
   .about-what-i-do {
