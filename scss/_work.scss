@@ -12,6 +12,7 @@
     display: flex;
     padding: 2rem;
     @include fadeInBottom;
+
     @for $i from 1 through 4 {
       &:nth-child(#{$i}) {
         animation-delay: $i * 300ms;
