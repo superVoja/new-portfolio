@@ -104,10 +104,11 @@ body {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 
 .intro-content {
+  margin-top: 2rem;
   @include fadeInBottom;
 
   .intro-heading {
@@ -127,7 +128,7 @@ body {
   animation-delay: 0.4s;
 
   img {
-    width: 80%;
+    width: 100%;
     object-fit: cover;
     transition: all 0.4s ease-in-out;
 

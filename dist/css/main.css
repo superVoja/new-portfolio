@@ -201,9 +201,10 @@ body {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
-  padding-top: 6rem; }
+  padding-top: 4rem; }
 
 .intro-content {
+  margin-top: 2rem;
   animation-name: fadeInBottom;
   animation-iteration-count: 1;
   animation-duration: 1s;
@@ -229,7 +230,7 @@ body {
   backface-visibility: hidden;
   animation-delay: 0.4s; }
   .intro-images img {
-    width: 80%;
+    width: 100%;
     object-fit: cover;
     transition: all 0.4s ease-in-out;
     animation-name: colorAnimation;
@@ -825,7 +826,7 @@ body {
       text-align: center; }
   .what-i-do {
     margin: 0; }
-  .main-work {
+  .work-container {
     display: none; }
   .contact-container {
     display: flex;
@@ -1196,7 +1197,7 @@ html {
       text-align: center; }
   .what-i-do {
     margin: 0; }
-  .main-work {
+  .work-container {
     display: none; }
   .contact-container {
     display: flex;

@@ -15,12 +15,14 @@ function toggleMenu() {
     menuNav.classList.add("show");
     navItems.forEach(item => item.classList.add("show"));
     showMenu = true;
+    document.body.style.overflow = "hidden";
   } else {
     menuBtn.classList.remove("close");
     menu.classList.remove("show");
     menuNav.classList.remove("show");
     navItems.forEach(item => item.classList.remove("show"));
     showMenu = false;
+    document.body.style.overflow = "visible";
   }
 }
 
