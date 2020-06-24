@@ -372,7 +372,7 @@ body {
     background-size: cover;
     border-radius: 2rem; }
   .work-container .item-4 {
-    background: url(../assets/images/explore-concept.png);
+    background: url(../assets/images/vue-weather.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1151,7 +1151,7 @@ iframe {
   text-align: left;
   visibility: hidden;
   opacity: 0;
-  transition: opaciry 0.4s; }
+  transition: opacity 0.4s; }
 
 .alert-validate::after {
   content: "!";
